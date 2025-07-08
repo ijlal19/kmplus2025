@@ -1,0 +1,88 @@
+.main {
+    width: 100%;
+    padding: 50px 10px !important;
+    box-sizing: border-box;
+    background: url('/kmplusImages/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: whitesmoke;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        box-sizing: border-box;
+
+        @media (max-width:768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .content_box {
+            box-sizing: border-box;
+
+            .title_box {
+                display: flex;
+                box-sizing: border-box;
+                width: 100%;
+                align-items: center;
+                column-gap: 3px;
+                padding-left: 20px;
+
+                .dash {
+                    width: 20px;
+                    box-sizing: border-box;
+                    height: 0px !important;
+                    background-color: #E83c3e;
+                    border: 1px solid red;
+                }
+
+                .title {
+                    color: #E83c3e;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0px;
+                    margin: 0px;
+                    box-sizing: border-box;
+
+                    @media (max-width:768px) {
+                        padding-left: 10px;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .heading {
+                margin: 5px 0px;
+                box-sizing: border-box;
+                font-size: 50px;
+                color: #121212;
+                font-weight: bolder;
+                padding-left: 20px;
+
+                @media (max-width:768px) {
+                    padding-left: 10px;
+                    margin-top: 10px;
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+            }
+            .description{
+                font-size: 16px;
+                padding-top: 20px;
+                margin: 0px;
+                padding-left: 20px;
+                @media (max-width:768px) {
+                    padding-left: 10px;
+                    // margin-top: 10px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .iframe_box {
+            box-sizing: border-box;
+        }
+    }
+}

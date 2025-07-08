@@ -1,0 +1,121 @@
+.header_main {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #121212;
+    .container {
+        width: 100%;
+        justify-content: center;
+        column-gap: 80px;
+        box-sizing: border-box;
+
+        .nav_box {
+            width: auto;
+            text-decoration: none;
+            box-sizing: border-box;
+            padding: 13px 20px !important;
+            box-sizing: border-box;
+
+            .p {
+                text-decoration: none;
+                margin: 0px !important;
+                padding: 0px !important;
+                font-size: 16px;
+                font-weight: 600;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .header_links_box {
+        background: url('../../../../public/kmplusImages/header_bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid #000;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        padding: 5px 15px;
+        justify-content: space-between;
+
+        .input_box {
+            display: flex;
+            width: 100%;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            height: 35px;
+            max-width: 250px;
+            box-sizing: border-box;
+            border: 1px solid #afafaf;
+
+            .search_icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
+                cursor: pointer;
+                border: none;
+                box-sizing: border-box;
+                padding: 5px !important;
+                color: white;
+                background-color: rgba(115, 116, 115, 0.407);
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+
+            .input {
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 7px 10px ;
+                font-size: 14px;
+            }
+        }
+
+        .Logo_box {
+            width: 100px;
+
+            .logo {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .icon_section {
+            display: flex;
+            column-gap: 10px;
+
+            .icon_box {
+                cursor: pointer;
+                border: 1px solid #ffffff;
+                padding: 5px !important;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid #00000000;
+
+                .icon {
+                    color: white;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+.drawer{
+    border: none;
+    outline: none;
+    background-color: #121212;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+}
