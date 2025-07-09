@@ -27,7 +27,7 @@ const Contact_Form = () => {
 
     return (
         <div className={styles.main}>
-            <h1 className={styles.heading}>Contact_Form</h1>
+            <h1 className={styles.heading}>Contact Us</h1>
             <p className={styles.text}>We’d love to hear from you! You can use the form below to contact us. Don’t forget to check out our support section for product details and technical info.</p>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <label className={styles.label}>Name <span className={styles.required}>*</span></label>
