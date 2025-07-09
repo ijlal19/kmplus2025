@@ -1,17 +1,23 @@
 'use client'
 import React from "react";
 import styles from './index.module.scss';
-const Hero_Card = ({ props }: any) => {
-    return (
-        <div className={styles.main} style={{
-        backgroundImage: `url(${props.background_image})`
-        }}>
-            <div className={styles.content}>
-                <p className={styles.title}>{props?.title}</p>
-                <p className={styles.description}>{props?.description}</p>
-                <button className={styles.btn}>View Solutions</button>
-            </div>
-        </div >
-    )
+
+interface HeroCardProps {
+  title: string;
+  description: string;
+  background_image: string;
 }
-export default Hero_Card
+
+const Hero_Card = ({ title, description, background_image }: HeroCardProps) => {
+  return (
+    <div className={styles.main} style={{ backgroundImage: `url(${background_image})` }}>
+      <div className={styles.content}>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.description}>{description}</p>
+        <button className={styles.btn}>View Solutions</button>
+      </div>
+    </div>
+  );
+};
+
+export default Hero_Card;

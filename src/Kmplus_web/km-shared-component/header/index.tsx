@@ -24,7 +24,7 @@ const Header = () => {
         setOpen(newOpen);
     };
 
-    const navItems: any = [
+    const navItems = [
         { text: 'HOME', url: '/' },
         { text: 'ABOUT', url: '/about' },
         { text: 'SOLUTIONS', url: '/solutions' },
@@ -36,7 +36,7 @@ const Header = () => {
     const DrawerList = (
         <Box sx={{ width: 250, display: isMobile ? "flex" : 'none' }} className={styles.drawer} role="presentation" onClick={toggleDrawer(false)}>
             <List>
-                {navItems.map((items: any, index: any) => (
+                {navItems.map((items, index) => (
                     <ListItem key={index} disablePadding>
                         <ListItemButton>
                             <Link
@@ -62,24 +62,24 @@ const Header = () => {
             </Drawer>
             <div className={styles.container} style={{ display: isMobile ? 'none' : "flex" }}>
                 <div className={styles.nav_box}>
-                    <a href="/" className={styles.p}>
+                    <Link href="/" className={styles.p}>
                         <p className={styles.p}>HOME</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.nav_box}>
-                    <a href="/about" className={styles.p}>
+                    <Link href="/about" className={styles.p}>
                         <p className={styles.p}>ABOUT</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.nav_box}>
-                    <a href="" className={styles.p}>
+                    <Link href="" className={styles.p}>
                         <p className={styles.p}>PRODUCT</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.nav_box}>
-                    <a href="" className={styles.p}>
+                    <Link href="/contact" className={styles.p}>
                         <p className={styles.p}>CONTACT US</p>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={styles.header_links_box}>
@@ -91,9 +91,9 @@ const Header = () => {
                     <img src='https://biosurgeasia.com/wp-content/uploads/2023/09/biosurge-logo-1.png' alt="" className={styles.logo} />
                 </div>
                 <div className={styles.icon_section} >
-                    <a href=""><div className={styles.icon_box} style={{ backgroundColor: "#25d366", display: isMobile ? 'none' : "flex" }}><WhatsAppIcon className={styles.icon} /></div></a>
-                    <a href=""><div className={styles.icon_box} style={{ backgroundColor: "#3b5998", display: isMobile ? 'none' : "flex" }}><FacebookRoundedIcon className={styles.icon} /></div></a>
-                    <a href=""><div className={styles.icon_box} style={{ backgroundColor: "#cd201f", display: isMobile ? 'none' : "flex" }}><YouTubeIcon className={styles.icon} /></div></a>
+                    <Link href=""><div className={styles.icon_box} style={{ backgroundColor: "#25d366", display: isMobile ? 'none' : "flex" }}><WhatsAppIcon className={styles.icon} /></div></Link>
+                    <Link href=""><div className={styles.icon_box} style={{ backgroundColor: "#3b5998", display: isMobile ? 'none' : "flex" }}><FacebookRoundedIcon className={styles.icon} /></div></Link>
+                    <Link href=""><div className={styles.icon_box} style={{ backgroundColor: "#cd201f", display: isMobile ? 'none' : "flex" }}><YouTubeIcon className={styles.icon} /></div></Link>
                     <div className={styles.icon_box} onClick={toggleDrawer(true)} style={{ backgroundColor: "transparent", display: isMobile ? 'flex' : "none" }}><MenuIcon className={styles.icon} /></div>
                 </div>
             </div>

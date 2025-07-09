@@ -37,9 +37,9 @@ const HeroSection = () => {
                 loop={true}
             >
                 {
-                    Data.map((e: any, i: any) => {
+                    Data.map((e, i) => {
                         return (
-                            <SwiperSlide key={i}><Hero_Card props={e} /></SwiperSlide>
+                            <SwiperSlide key={i}><Hero_Card title={e.title}  description={e.description} background_image={e.background_image}   /></SwiperSlide>
                         )
                     })
                 }

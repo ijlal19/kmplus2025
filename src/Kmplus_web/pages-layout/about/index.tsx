@@ -4,6 +4,7 @@ import Create_solution from "./technology_section";
 import Vision from "./vision_section";
 import Invent from "./invent";
 import Improve from "./improve";
+import Certified from "./certified_section";
 
 const Index  = ()=>{
     return(
@@ -13,6 +14,7 @@ const Index  = ()=>{
             <Vision />
             <Invent />
             <Improve />
+            <Certified />
         </div>
     )
 }

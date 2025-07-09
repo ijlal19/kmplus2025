@@ -7,6 +7,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import EmailIcon from '@mui/icons-material/Email';
 import styles from './index.module.scss';
 import React from "react";
+import { Link } from '@mui/material';
 
 
 const Footer = () => {
@@ -17,10 +18,10 @@ const Footer = () => {
                     <img src="https://biosurgeasia.com/wp-content/uploads/2023/09/biosurge-logo-1.png" alt="kmplus2025" className={styles.image} />
                 </div>
                 <div className={styles.grid_item2}><p className={styles.p}>SITE</p>
-                    <a href="/about" className={styles.site_link}><p className={styles.site_link}>About</p></a>
-                    <a href="#" className={styles.site_link}><p className={styles.site_link}>Solutions</p></a>
-                    <a href="#" className={styles.site_link}><p className={styles.site_link}>Products</p></a>
-                    <a href="#" className={styles.site_link}><p className={styles.site_link}>Dealer Portal</p></a>
+                    <Link href="/about" className={styles.site_link}><p className={styles.site_link}>About</p></Link>
+                    <Link href="/contact" className={styles.site_link}><p className={styles.site_link}>Solutions</p></Link>
+                    <Link href="#" className={styles.site_link}><p className={styles.site_link}>Products</p></Link>
+                    <Link href="#" className={styles.site_link}><p className={styles.site_link}>Dealer Portal</p></Link>
                 </div>
                 <div className={styles.grid_item3}>
                     <p className={styles.p}>CONTACT</p>
@@ -40,15 +41,15 @@ const Footer = () => {
                 <div className={styles.grid_item4}>
                     <p className={styles.p}>OUR SOCIAL</p>
                     <div className={styles.icon_section} >
-                        <a href="">
+                        <Link href="">
                             <div className={styles.icon_box} style={{ backgroundColor: "#25d366" }}><WhatsAppIcon className={styles.icon} /></div>
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link href="">
                             <div className={styles.icon_box} style={{ backgroundColor: "#3b5998" }}><FacebookRoundedIcon className={styles.icon} /></div>
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link href="">
                             <div className={styles.icon_box} style={{ backgroundColor: "#cd201f" }}><YouTubeIcon className={styles.icon} /></div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
