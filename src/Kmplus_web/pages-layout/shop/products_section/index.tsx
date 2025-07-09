@@ -66,7 +66,7 @@ const Product_Section = () => {
                         )
                     })
                 }
-            </div>
+            </div> 
         </div>
     )
 }
