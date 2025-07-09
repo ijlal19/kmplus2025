@@ -42,7 +42,7 @@ const HeroSection = () => {
                             <SwiperSlide key={i}><Hero_Card title={e.title}  description={e.description} background_image={e.background_image}   /></SwiperSlide>
                         )
                     })
-                }
+                } 
             </Swiper>
         </div>
     )
