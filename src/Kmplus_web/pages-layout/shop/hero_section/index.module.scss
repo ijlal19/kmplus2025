@@ -1,0 +1,33 @@
+.main{
+    width: 100%;
+    // height: auto;
+    // min-height: 80vh;
+    // padding: 100px 0px !important;
+    box-sizing: border-box;
+    background: url('../../../../../public/AboutImages/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0px !important;
+        background: linear-gradient(90deg , rgba(0, 0, 0, 0.797) ,rgba(255, 0, 0, 0));
+
+        .heading{
+            font-size: 45px;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+        @media (max-width:768px) {
+            height: 200px !important;
+        }
+    }
+}

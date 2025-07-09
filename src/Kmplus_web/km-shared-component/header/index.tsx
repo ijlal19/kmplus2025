@@ -28,7 +28,7 @@ const Header = () => {
         { text: 'HOME', url: '/' },
         { text: 'ABOUT', url: '/about' },
         { text: 'SOLUTIONS', url: '/solutions' },
-        { text: 'PRODUCT', url: '/product' },
+        { text: 'PRODUCTS', url: '/shop' },
         { text: 'ONLINE CERTIFICATE', url: '/certificate' },
         { text: 'CONTACT US', url: '/contact' }
     ];
@@ -72,8 +72,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className={styles.nav_box}>
-                    <Link href="" className={styles.p}>
-                        <p className={styles.p}>PRODUCT</p>
+                    <Link href="/shop" className={styles.p}>
+                        <p className={styles.p}>PRODUCTS</p>
                     </Link>
                 </div>
                 <div className={styles.nav_box}>

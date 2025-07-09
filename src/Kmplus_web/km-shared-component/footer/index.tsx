@@ -19,8 +19,8 @@ const Footer = () => {
                 </div>
                 <div className={styles.grid_item2}><p className={styles.p}>SITE</p>
                     <Link href="/about" className={styles.site_link}><p className={styles.site_link}>About</p></Link>
-                    <Link href="/contact" className={styles.site_link}><p className={styles.site_link}>Solutions</p></Link>
-                    <Link href="#" className={styles.site_link}><p className={styles.site_link}>Products</p></Link>
+                    <Link href="#" className={styles.site_link}><p className={styles.site_link}>Solutions</p></Link>
+                    <Link href="/shop" className={styles.site_link}><p className={styles.site_link}>Products</p></Link>
                     <Link href="#" className={styles.site_link}><p className={styles.site_link}>Dealer Portal</p></Link>
                 </div>
                 <div className={styles.grid_item3}>
