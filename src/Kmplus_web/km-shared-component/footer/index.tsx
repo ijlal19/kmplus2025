@@ -8,11 +8,14 @@ import EmailIcon from '@mui/icons-material/Email';
 import styles from './index.module.scss';
 import React from "react";
 import { Link } from '@mui/material';
+import { usePathname } from 'next/navigation';
 
 
 const Footer = () => {
+    const pathname = usePathname()
+        const isAdminPath = pathname.includes('/admin');
     return (
-        <div className={styles.main}>
+        <div className={styles.main}  style={{ display: isAdminPath ? 'none' : 'flex' }}>
             <div className={styles.container}>
                 <div className={styles.grid_item1}>
                     <img src="https://biosurgeasia.com/wp-content/uploads/2023/09/biosurge-logo-1.png" alt="kmplus2025" className={styles.image} />

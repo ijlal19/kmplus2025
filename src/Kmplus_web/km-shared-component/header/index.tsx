@@ -13,11 +13,13 @@ import styles from './index.module.scss';
 import List from '@mui/material/List';
 import Box from '@mui/material/Box';
 import * as React from 'react';
+import { usePathname } from 'next/navigation';
 
 
 const Header = () => {
     const isMobile = useMediaQuery('(max-width:768px)');
-
+    const pathname = usePathname()
+    const isAdminPath = pathname.includes('/admin');
     const [open, setOpen] = React.useState(false);
 
     const toggleDrawer = (newOpen: boolean) => () => {
@@ -46,7 +48,7 @@ const Header = () => {
                                 sx={{ width: '100%', display: 'block', padding: '8px 16px' }}
                                 target="_self" // or "_blank" for new tab
                             >
-                            <ListItemText primary={items.text} />
+                                <ListItemText primary={items.text} />
                             </Link>
                         </ListItemButton>
                     </ListItem>
@@ -56,7 +58,7 @@ const Header = () => {
     );
 
     return (
-        <div className={styles.header_main}>
+        <div className={styles.header_main} style={{ display: isAdminPath ? 'none' : 'block' }} >
             <Drawer open={open} onClose={toggleDrawer(false)} >
                 {DrawerList}
             </Drawer>
